@@ -22,6 +22,7 @@ Scenario Outline: User logs in with invalid credentials
     Then I should see an error message "The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later."
     Examples:
      | email  | password |
-     | "test00@gmail.com"  | "test4@233" |
-     
+     | "test00@gmail.com"   | "test4@233" |
+     | "test418@gmail.com"  | "test4@233" |
+     | "test00@gmail.com"   | "test4@123" |
      
